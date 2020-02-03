@@ -1,0 +1,499 @@
+a, a:hover{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+header{
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    font-family: 'Lato', sans-serif;
+}
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.logo:hover{
+    color: #fff;
+}
+.menu-item{
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 28px;
+    position: relative;
+    transition: .6s;
+}
+.menu-item:hover{
+    color: #fff;
+}
+.menu-item:before,
+.menu-item:after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: .4s;
+}
+.menu-item:after{
+    width: 50%;
+    background: #fcac45;
+}
+.menu-item:hover:before,
+.menu-item:hover:after{
+    transform: scaleX(1);
+}
+
+
+/*####  Burger  ####*/
+.mobile-btn{
+    width: 55px;
+    height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-btn span{
+    width: 100%;
+    height: 3px;
+    background: #fcac45;
+    display: inline-block;
+    position: relative;
+}
+.mobile-btn span:before,
+.mobile-btn span:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fcac45;
+    transition: .6s;
+}
+.mobile-btn span:before{
+    top: -10px;
+}
+.mobile-btn span:after{
+    top: 10px;
+}
+
+
+
+/*####  Burger  ####*/
+
+
+/*####  Hero  ####*/
+
+#hero {
+    background: #111;
+    min-height: 100vh;
+}
+.hero-content{
+    padding-top: 20%;
+}
+.hero-title{
+    color: #999999;
+    font-size: 44px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.hero-title span{
+    color: #fcac45;
+}
+.hero-description{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 20px;
+}
+.hero-icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: white;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+}
+.hero-icon:hover{
+    color: #fcac45;
+}
+
+/*####  Hero  ####*/
+
+/*####  About ####*/
+#about{
+    font-size: 18px;
+    padding: 100px 0;
+}
+.about-title-2{
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #222222;
+    position: relative;
+    line-height: 1;
+}
+.about-title-2:before {
+    content: '';
+    position: absolute;
+    width: 97px;
+    height: 3px;
+    background: #fcac45;
+    bottom: -20px;
+}
+.about-description{
+    margin-top: 50px;
+    margin-bottom: 45px;
+    color: #6c6c6c;
+}
+.about-box{
+    color: #6c6c6c;
+    line-height: 1;
+}
+.about-icon{
+    width: 15px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    clear: both;
+}
+.about-box-description{
+    margin-left: 25px;
+}
+
+
+
+.contacts_box{
+    margin-bottom: 30px;
+
+}
+.vertical_icon{
+    width: 30px;
+    height: 30px;
+    color: rgba(0, 0, 199, 0.87);
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    clear: both;
+}
+.contacts_box p{
+    height: 35px;
+    font-size: 14px;
+    margin-left: 50px;
+
+}
+
+/*####  About ####*/
+
+.general-title{
+    text-transform: uppercase;
+    font-size: 44px;
+    position: relative;
+    line-height: 1;
+    margin-bottom: 90px;
+}
+.general-title span{
+    font-weight: 600;
+}
+.general-title:before, .general-title:after{
+    content: '';
+    position: absolute;
+    width: 97px;
+    height: 4px;
+    background: #fcac45;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.general-title:after{
+    width: 67px;
+    background: #b37b33;
+    bottom: -35px;
+}
+
+/*#### Team  ####*/
+#team{
+    background: #111;
+    padding: 100px 0;
+    color: #fff;
+}
+.team-picture img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.team-picture-description{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 23px;
+}
+
+/*#### Team  ####*/
+
+
+#services{
+    padding: 85px 0 90px;
+}
+.section-description{
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    margin: 70px 0 90px;
+}
+
+
+.services-item{
+    transition: .6s;
+}
+.services-item:hover .services-icon{
+    background: rgba(252, 172, 69, 0.78);
+}
+.services-icon {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #fcac45;
+    border-radius: 50%;
+    transition: .6s;
+
+    margin: 0 auto;
+}
+.services-title{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222222;
+    margin-top: 29px;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+#clients{
+    padding: 90px 0 150px;
+}
+.line{
+    width: 100%;
+    height: 40px;
+    background: #111111;
+}
+.clients-picture img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.clients-picture-title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 25px;
+}
+.clients-picture-definition{
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+#portfolio{
+    padding: 90px 0 95px;
+}
+.portfolio-item{
+    height: 256px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.portfolio-item:hover .overlay{
+    bottom: 0;
+}
+.portfolio-item img{
+    transition: all .5s;
+}
+.portfolio-item:hover img{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+.overlay{
+    width: 100%;
+    height: 256px;
+    background: #222222;
+    color: white;
+    position: absolute;
+    bottom: -260px;
+    transition: all .6s;
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.overlay-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 66px;
+}
+.overlay-description{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #b2b2b2;
+}
+.overlay-svg{
+    margin-top: 25px;
+}
+
+
+.tabs input{
+    display: none;
+}
+.tab{
+    display: none;
+}
+#tab1:checked  ~ .tab1,
+#tab2:checked  ~ .tab2,
+#tab3:checked  ~ .tab3,
+#tab4:checked  ~ .tab4,
+#tab5:checked  ~ .tab5
+{
+    display: block;
+}
+
+.tabs input:checked + label {
+    color: #222222;
+}
+.tab__button{
+    font-weight: 600;
+    font-size: 18px;
+    color: #888888;
+    text-transform: capitalize;
+    border-right: 1px solid #888888 ;
+    line-height: 1;
+    padding: 0 14px;
+    margin-bottom: 44px;
+}
+.bn{
+    border: none;
+    padding-right: 0;
+}
+.heading{
+    width: 57%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+#experience{
+    padding: 90px 0 150px;
+}
+
+
+
+#contacts{
+    padding: 90px 0;
+}
+.login-form-box {
+    width: 48%;
+    display: inline-block;
+}
+.lg{
+    margin-right: 25px;
+}
+.login-form-input{
+    height: 42px;
+    width: 100%;
+    border: 1px solid #999999;
+    margin-bottom: 15px;
+}
+.login-form-input-area{
+    height: 163px;
+    width: 100%;
+    border: 1px solid #999999;
+    margin-bottom: 15px;
+}
+.login-form-button{
+    width: 165px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background: #fcac45;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .4s;
+    float: right;
+}
+.login-form-button:hover{
+    background: rgba(252, 172, 69, 0.73);
+}
+.form-title {
+    color: #5d5d5d;
+}
+.form-title span{
+    color: red;
+}
+
+
+#footer{
+    background: #111;
+    padding: 40px 0;
+    color: #b2b2b2;
+}
+.footer-description{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.footer-description span{
+    font-weight: 700;
+}
+.footer-items{
+    width: 100%;
+    float: right;
+    display: flex;
+}
+
+.footer_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0000b4;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 10px;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+.footer_icon:hover{
+    color: #111111;
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
